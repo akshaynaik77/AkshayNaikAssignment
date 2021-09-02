@@ -1,0 +1,106 @@
+1.Create an array with five score out of 100, compute the avg of score and calculate percentage.
+
+
+public class ScoreAvg {
+
+    public static void main(String[] args) {
+        double[] arr = {50,40,75,87,45};
+        double total = 0;
+
+        for(int i=0; i<arr.length; i++){
+        	total = total + arr[i];
+        }
+        double average = total / arr.length;
+        
+        System.out.format("The average is: %.f", average);
+    }
+}
+
+
+
+
+2.Create Two 3 X 3 matrices and perform multiplication of matrices.
+
+public class MatrixMultiplication{  
+public static void main(String args[]){  
+   
+int a[][]={{7,2,1},{2,6,9},{1,4,2}};    
+int b[][]={{1,5,1},{4,2,2},{7,1,4}};    
+    
+int c[][]=new int[3][3]; 
+        
+for(int i=0;i<3;i++){    
+for(int j=0;j<3;j++){    
+c[i][j]=0;      
+for(int k=0;k<3;k++)      
+{      
+c[i][j]+=a[i][k]*b[k][j];      
+
+System.out.print(c[i][j]+" ");   
+}
+System.out.println();   
+}    
+}}  
+
+
+3.Create a variable of type String With Follwing Data.
+   String data=" Java is object oriented. Java is platform Independent .Java is simple."
+ Search the word Java And count number od occurrance.
+
+
+class QueThree {
+  
+static int countOccurrences(String str, String word) 
+{
+    
+    int count = 0;
+    for (int i = 0; i < a.length; i++) 
+    {
+  
+    if (word.equals(a[i]))
+        count++;
+    }
+  
+    return count;
+}
+  
+public static void main(String args[]) 
+{
+    String str = "Java is object oriented Java is platform Independent Java is simple";
+    String word = "Java";
+    System.out.println(countOccurrences(str, word));
+}
+}
+
+
+
+4. Create an Array of type int with 10 elements.
+int array[]={8,2,3,1,6,5,7}
+sort the array in decending order.
+
+public class SortDsc {    
+    public static void main(String[] args) {        
+            
+        int [] arr = new int [] {7, 5, 2, 1, 4};     
+        int temp = 0;    
+         
+        }    
+               
+        for (int i = 0; i < arr.length; i++) {     
+            for (int j = i+1; j < arr.length; j++) {     
+             if(arr[i] < arr[j]) {    
+              temp = arr[i];    
+                arr[i] = arr[j];    
+                arr[j] = temp;    
+               }     
+              }     
+               }    
+            
+        System.out.println();    
+              
+        System.out.println("Elements of array sorted in descending order: ");    
+        for (int i = 0; i < arr.length; i++) {     
+            System.out.print(arr[i] + " ");    
+        }    
+        }  
+        }    

@@ -153,6 +153,6 @@ public class CheckString {
 
 }
 
-5 Identify classes(java.lang) from API Documentation which can be used for static import.
+
 
 
